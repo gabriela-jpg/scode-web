@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>Hello</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scode | Soluciones Integrales en Obra y Mantenimiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --scode-navy: #00235a;
+            --scode-teal: #40E0D0;
+        }
+        .bg-scode-navy { background-color: var(--scode-navy); }
+        .text-scode-navy { color: var(--scode-navy); }
+        .border-scode-teal { border-color: var(--scode-teal); }
+        .bg-scode-teal { background-color: var(--scode-teal); }
+        .hover-teal:hover { background-color: #35c9ba; }
+        html { scroll-behavior: smooth; }
+        .hero-pattern {
+            background-color: #ffffff;
+            background-image: radial-gradient(var(--scode-teal) 0.5px, transparent 0.5px), radial-gradient(var(--scode-teal) 0.5px, #ffffff 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0,10px 10px;
+        }
+        .animate-fade-in { animation: fadeIn 1s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-3xl font-black text-scode-navy tracking-tighter italic">scode<span class="text-scode-teal">_</span></span>
+            </div>
+            <div class="hidden md:flex space-x-10 font-semibold items-center text-sm uppercase tracking-wider">
+                <a href="#inicio" class="text-scode-navy hover:text-scode-teal transition-colors">Inicio</a>
+                <a href="#nosotros" class="text-scode-navy hover:text-scode-teal transition-colors">Nosotros</a>
+                <a href="#servicios" class="text-scode-navy hover:text-scode-teal transition-colors">Servicios</a>
+                <a href="#contacto" class="bg-scode-navy text-white px-6 py-2.5 rounded-lg hover-teal shadow-lg transition-all active:scale-95">Cotizar Proyecto</a>
+            </div>
+            <div class="md:hidden text-scode-navy text-2xl">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="inicio" class="relative min-h-[85vh] flex items-center overflow-hidden bg-gray-50/50">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="animate-fade-in">
+                <div class="inline-flex items-center space-x-2 bg-white border border-gray-200 px-4 py-2 rounded-full mb-8 shadow-sm">
+                    <i class="fas fa-map-marker-alt text-scode-teal"></i>
+                    <span class="text-scode-navy font-bold text-xs uppercase tracking-widest">Sede en Mérida, Yucatán</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-scode-navy leading-[1.1]">
+                    Obra, Ingeniería <br>& <span class="text-scode-teal">Mantenimiento</span>
+                </h1>
+                <p class="mt-8 text-xl text-gray-600 leading-relaxed max-w-lg">
+                    Brindamos soluciones integrales para los sectores <b>industrial, comercial y residencial</b> con el respaldo de 8 años de excelencia técnica.
+                </p>
+                <div class="mt-12 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#servicios" class="bg-scode-navy text-white text-center px-10 py-5 rounded-xl font-bold hover-teal shadow-xl transition-all hover:-translate-y-1">Nuestros Servicios</a>
+                    <a href="#contacto" class="border-2 border-scode-navy text-scode-navy text-center px-10 py-5 rounded-xl font-bold hover:bg-gray-100 transition-all">Hablar con un Experto</a>
+                </div>
+            </div>
+            <div class="relative hidden md:block">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-scode-teal/10 rounded-full blur-3xl"></div>
+                <div class="bg-white p-4 rounded-[2.5rem] shadow-2xl rotate-3">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="Construcción Scode" class="rounded-[2rem] object-cover h-[500px] w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-20">
+                <h2 class="text-4xl font-black text-scode-navy mb-6 italic uppercase">Nuestra Trayectoria</h2>
+                <div class="w-20 h-1.5 bg-scode-teal mx-auto mb-8"></div>
+                <p class="text-xl text-gray-600 leading-relaxed italic">"Colaboración Empresarial y Tecnológica de México (Scode) es una empresa familiar fundada en 2018 que simplifica la coordinación de sus proyectos mediante un servicio integral y supervisión constante."</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-10 rounded-3xl border-b-4 border-scode-teal">
+                    <i class="fas fa-history text-3xl text-scode-navy mb-6"></i>
+                    <h4 class="text-xl font-bold text-scode-navy mb-4">Experiencia</h4>
+                    <p class="text-gray-600">8 años operando en la Península de Yucatán, comprendiendo a la perfección las condiciones climáticas y normativas locales.</p>
+                </div>
+                <div class="bg-gray-50 p-10 rounded-3xl border-b-4 border-scode-teal">
+                    <i class="fas fa-handshake text-3xl text-scode-navy mb-6"></i>
+                    <h4 class="text-xl font-bold text-scode-navy mb-4">Trato Cercano</h4>
+                    <p class="text-gray-600">Comunicación directa con los responsables del proyecto, garantizando respuestas ágiles y soluciones a la medida de cada inmueble.</p>
+                </div>
+                <div class="bg-gray-50 p-10 rounded-3xl border-b-4 border-scode-teal">
+                    <i class="fas fa-award text-3xl text-scode-navy mb-6"></i>
+                    <h4 class="text-xl font-bold text-scode-navy mb-4">Servicio Integral</h4>
+                    <p class="text-gray-600">Un solo proveedor para todas las necesidades: desde obra civil y herrería hasta ingeniería eléctrica de media tensión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="servicios" class="py-24 bg-scode-navy text-white rounded-[3rem] mx-4 md:mx-10 my-10 overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-scode-teal/10 rounded-full -mr-32 -mt-32"></div>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-5xl font-black mb-4">Servicios <span class="text-scode-teal">Especializados</span></h2>
+                    <p class="text-blue-100 text-lg">Ofrecemos soluciones técnicas con materiales de primera calidad.</p>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#contacto" class="text-scode-teal font-bold hover:underline">Solicitar catálogo completo <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-all group">
+                    <div class="w-16 h-16 bg-scode-teal text-scode-navy rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-scode-teal/20">
+                        <i class="fas fa-th-large text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Obra Ligera</h3>
+                    <p class="text-blue-100 mb-6 leading-relaxed">Muros divisorios y plafones termoacústicos. Fachadas exteriores en <b>Durock</b>, mármol sintético PVC y acabados decorativos <b>WPC</b>.</p>
+                    <ul class="text-sm text-scode-teal font-semibold space-y-2">
+                        <li><i class="fas fa-check mr-2"></i> Paneles Durock</li>
+                        <li><i class="fas fa-check mr-2"></i> Plafones falsos</li>
+                        <li><i class="fas fa-check mr-2"></i> Lambrín WPC</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-all group">
+                    <div class="w-16 h-16 bg-scode-teal text-scode-navy rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-scode-teal/20">
+                        <i class="fas fa-snowflake text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Refrigeración y AA</h3>
+                    <p class="text-blue-100 mb-6 leading-relaxed">Instalación y mantenimiento de aires acondicionados, sistemas de refrigeración industrial, chillers y torres de enfriamiento.</p>
+                    <ul class="text-sm text-scode-teal font-semibold space-y-2">
+                        <li><i class="fas fa-check mr-2"></i> Residencial y Comercial</li>
+                        <li><i class="fas fa-check mr-2"></i> Mantenimiento Preventivo</li>
+                        <li><i class="fas fa-check mr-2"></i> Torres de enfriamiento</li>
+                    </ul>
+                </div>
+                <div class="bg-white/5 p-10 rounded-3xl border border-white/10 hover:bg-white/10 transition-all group">
+                    <div class="w-16 h-16 bg-scode-teal text-scode-navy rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-scode-teal/20">
+                        <i class="fas fa-shield-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Impermeabilización</h3>
+                    <p class="text-blue-100 mb-6 leading-relaxed">Protección de azoteas y muros contra humedad extrema. Acabados de pintura profesional con durabilidad garantizada.</p>
+                    <ul class="text-sm text-scode-teal font-semibold space-y-2">
+                        <li><i class="fas fa-check mr-2"></i> Sellado de grietas</li>
+                        <li><i class="fas fa-check mr-2"></i> Pintura Industrial</li>
+                        <li><i class="fas fa-check mr-2"></i> Acabados Residenciales</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-16 pt-16 border-t border-white/10">
+                <p class="text-scode-teal font-bold uppercase tracking-widest text-xs mb-8 text-center">Otros Servicios Especializados</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Ingeniería Eléctrica</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Obra Civil Integral</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Herrería y Cristalería</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Recubrimiento de Pisos</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Sistemas PLC</span>
+                    <span class="px-6 py-3 bg-white/5 rounded-full text-sm border border-white/10 hover:border-scode-teal transition-colors">Conservación de Edificios</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400 font-bold uppercase tracking-widest text-xs mb-10">Empresas e Instituciones que respaldan nuestra calidad</p>
+            <div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                <span class="text-xl font-black text-scode-navy">Gobierno del Estado de Yucatán</span>
+                <span class="text-xl font-black text-scode-navy">La Anita</span>
+                <span class="text-xl font-black text-scode-navy">Cámaras Empresariales</span>
+                <span class="text-xl font-black text-scode-navy">Sector Hotelero</span>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto" class="bg-gray-50 pt-24 pb-12 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="text-3xl font-black text-scode-navy mb-6 tracking-tighter">scode<span class="text-scode-teal">_</span></div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">Cada proyecto se ejecuta con estándares profesionales y supervisión constante para asegurar el valor de su patrimonio.</p>
+                    <div class="flex space-x-4 text-scode-navy">
+                        <a href="#" class="hover:text-scode-teal"><i class="fab fa-facebook-square text-2xl"></i></a>
+                        <a href="#" class="hover:text-scode-teal"><i class="fab fa-linkedin text-2xl"></i></a>
+                        <a href="#" class="hover:text-scode-teal"><i class="fab fa-whatsapp text-2xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-scode-navy font-black uppercase text-xs tracking-widest mb-6">Contacto</h4>
+                    <ul class="space-y-4 text-sm text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-scode-teal mt-1 mr-3"></i>
+                            <span>Calle 23 x 40a #192, Fracc. Lindavista. CP 97219<br>Mérida, Yucatán.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-scode-teal mr-3"></i>
+                            <span>999 370 6264 / 999 441 7776</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-scode-teal mr-3"></i>
+                            <span>contacto@scode.mx</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-scode-navy font-black uppercase text-xs tracking-widest mb-6">Directorio Institucional</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-bold text-scode-navy">Mtra. Gabriela Alzina</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">CEO</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-scode-navy">Ing. Edgar Leonel Aguilar Leal</p>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Director de Operaciones</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-scode-navy font-black uppercase text-xs tracking-widest mb-6">Oficinas</h4>
+                    <p class="text-sm text-gray-500 mb-4">Calle 67 C #344, Bosques de Yucalpetén. CP 97246. Mérida, México.</p>
+                    <a href="mailto:contacto@scode.mx" class="inline-block bg-scode-teal text-scode-navy px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-scode-navy hover:text-white transition-all">Enviar Mensaje</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 pt-8 text-center text-gray-400 text-[10px] uppercase tracking-[0.2em]">&copy; 2026 Scode Servicios Corporativos y Desarrollo. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+</body>
+</html>
